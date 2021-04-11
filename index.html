@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MTM6303 Assignment 3</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div id="container" class="form">
+		<form id="form" class="col--6 shadow p-3 mb-5 bg-white rounded">
+			<label>Title</label>
+			<input class="title-input" type="text">
+
+			<label for="years">Year</label>
+			<select name="years" id="years"></select>
+
+			<label for="months">Month</label>
+			<select name="months" id="months"></select>
+
+			<label for="days">Day</label>
+			<select name="days" id="days"></select>
+				<button class="generate-timer-btn btn btn-dark mb-3">Generate Timer</button>
+		</form>
+
+		<p class="time-return"></p>
+
+	</div>
+	<div id="timer" class="container">
+		<div class="row">
+
+			<div id="timer-div" class="col shadow p-3 mb-5 bg-white rounded">
+				<div class="row title-row">
+					<p id="title" class="title"></p>
+				</div>
+				<div id="timer" class="row">
+					<div class="col">
+						<p class="days number">0</p>
+					</div>
+					<div class="col">
+						<p class="days number">:</p>
+					</div>
+					<div class="col">
+						<p class="hours number">0</p>
+					</div>
+					<div class="col">
+						<p class="days number">:</p>
+					</div>
+					<div class="col">
+						<p class="minutes number">0</p>
+					</div>
+					<div class="col">
+						<p class="days number">:</p>
+					</div>
+					<div class="col">
+						<p class="seconds number">0</p>
+					</div>
+				</div>
+				<div class="reset-btn">
+					<button class="reset-timer-btn d-none btn btn-dark">Reset Timer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	<script src='script.js'></script>
+</body>
+
+</html>
